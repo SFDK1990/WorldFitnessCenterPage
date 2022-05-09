@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORLD FITNESS CENTER</title>
+
+    <!--Preftech (nos carga la pagina de antemano para tener una experiencia mas rapida a la pagina que indicamos,
+         normalmente la que mas usan los clientes)-->
+    <link rel="prefetch" href="nosotros.html" as="document" />
+
+    <!--Icono pestaña-->
+    <link rel="shortcut icon" href="img/LOGOA.ico" type="image/x-icon" />
+
+    <!--Preload-->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- Libreria jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+      crossorigin="crossorigin"
+      as="font"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Open Sans/PT Sans-->
+
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor">
+        <!--Contiene todo el bloque de la navegacion-->
+        <div class="barra">
+          <a class="logo" href="index.html">
+            <h1 class="logo__nombre no-margin centrar-texto">
+              World Fitness<span class="logo__bold"> Center</span>
+            </h1>
+          </a>
+
+          <nav class="navegacion">
+            <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+            <a href="cursos.html" class="navegacion__enlace">+ Cursos</a>
+            <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="header__texto">
+        <h2 class="no-margin">
+          Un entrenamiento para todos. Hecho a tu medida
+        </h2>
+        <p class="no-margin">Te damos impulso; tú decides hasta dónde llegar</p>
+        <div class=" desaparece">
+          <h4><u>Galeria</u></h4>
+          <p class="no-margin"><h3>SCROLL<h3><img src="img/arrow.png"  alt=""></p>  
+        </div>
+      </div>
+    </header>
+
+    <!-- Galeria -->
+    <section class="contenedor galeria">
+      <a href="#" id="gal-1"
+        ><img src="img/blog1.webp" alt="imagen entrada"
+      /></a>
+      <a href="#" id="gal-2"
+        ><img src="img/blog2.webp" alt="imagen entrada"
+      /></a>
+      <a href="#" id="gal-3"
+        ><img src="img/blog3.webp" alt="imagen entrada"
+      /></a>
+      <a href="#" id="gal-4"
+        ><img src="img/blog4.webp" alt="imagen entrada"
+      /></a>
+      <a href="#" id="gal-5"
+        ><img src="img/blog5.webp" alt="imagen entrada"
+      /></a>
+      <a href="#" id="gal-6"
+        ><img src="img/blog6.webp" alt="imagen entrada"
+      /></a>
+    </section>
+
+    <section class="PopUp" id="Img-1">
+      <div class="PopUpImg ocultar">
+        <a class="close">X</a>
+        <img src="img/blog1.webp" alt="foto1" />
+      </div>
+    </section>
+    <section class="PopUp" id="Img-2">
+      <div class="PopUpImg ocultar">
+        <a class="close">X</a>
+        <img src="img/blog2.webp" alt="foto2" />
+      </div>
+    </section>
+    <section class="PopUp" id="Img-3">
+      <div class="PopUpImg ocultar">
+        <a class="close">X</a>
+        <img src="img/blog3.webp" alt="foto3" />
+      </div>
+    </section>
+    <section class="PopUp" id="Img-4">
+      <div class="PopUpImg ocultar">
+        <a class="close">X</a>
+        <img src="img/blog4.webp" alt="foto4" />
+      </div>
+    </section>
+    <section class="PopUp" id="Img-5">
+      <div class="PopUpImg ocultar">
+        <a class="close">X</a>
+        <img src="img/blog5.webp" alt="foto5" />
+      </div>
+    </section>
+    <section class="PopUp" id="Img-6">
+      <div class="PopUpImg ocultar">
+        <a class="close">X</a>
+        <img src="img/blog6.webp" alt="foto6" />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="contenedor contenedor__footer">
+        <!--Contiene todo el bloque de la navegacion-->
+        <div class="barra">
+          <a class="logo" href="index.html">
+            <h1 class="logo__nombre no-margin centrar-texto">
+              World Fitness <span class="logo__bold">Center</span>
+            </h1>
+          </a>
+          <nav class="navegacion">
+            <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+            <a href="cursos.html" class="navegacion__enlace">+ Cursos</a>
+            <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+          </nav>
+          <ul>
+            <li>
+              <a class="logo_img" href="https://www.facebook.com/wfitnesscenter"
+                ><img src="logos/facebook.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/worldfitnesscentervalencina?igshid=YmMyMTA2M2Y="
+                ><img src="logos/instagram.png" alt="instagram_logo"
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src="logos/twitter.png" alt="twitter_logo" /></a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/modernizr.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

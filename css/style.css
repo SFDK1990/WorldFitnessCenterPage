@@ -1,0 +1,476 @@
+:root {
+  --fuenteHeading: "PT Sans", sans-serif;
+  --fuenteParrafos: "Open Sans", sans-serif;
+
+  --primario: #ea2027;
+  --claro: #e1e1e1;
+  --blanco: #ffffff;
+  --negro: #000000;
+}
+
+html {
+  box-sizing: border-box; /*ESTO HACE QUE EL PADING NO AFECTE EL ANCHO DE NUESTROS ELEMENTOS*/
+  font-size: 62.5%; /*1rem = 10px*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit; /*lo que hace es heredar del elemento padre de html pero si lo utilizas de otro selector lo hereda de ese = lo  hace mas dinamico*/
+}
+header {
+  padding-bottom: 1rem;
+}
+body {
+  font-family: var(--fuenteParrafos);
+  font-size: 1.6rem;
+  line-height: 2;
+  background: var(--blanco);
+  position: relative;
+  padding-bottom: 37rem;
+  min-height: 100vh;
+}
+img {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/***GLOBALES***/
+.contenedor {
+  /*max-width: 120rem;
+    width: 90%;    hace que no llegue hasta las orillas*/
+  width: min(
+    90%,
+    120rem
+  ); /*es lo mismo que arriba pero la nueva forma, adopta el que es menor*/
+  margin: 0 auto; /*hace que se centre*/
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fuenteHeading);
+  line-height: 1.2;
+}
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3.2rem;
+}
+h4 {
+  font-size: 2.8rem;
+}
+img {
+  max-width: 100%;
+}
+
+/***UTILIDADES***/
+
+.no-margin {
+  margin: 0; /**Utilizando este helper eliminamos el margin que nos da el navegador por defecto**/
+}
+.no-padding {
+  padding: 0; /** nos hace lo mismo pero con el pading**/
+}
+.centrar-texto {
+  text-align: center;
+}
+
+/***HEADER***/
+.webp .header {
+  background-image: url(../img/banner.webp); /**con modernizr hace que coja el archivo que soporta el navegador**/
+}
+.no-webp .header {
+  background-image: url(../img/banner.jpg);
+}
+.header {
+  height: 45rem;
+  background-repeat: no-repeat; /**no se repite la foto**/
+  background-size: cover; /**cubre todo el ancho del box**/
+  background-position: center center; /**nos posiciona la foto con dos parametros 1-lados 2-arriba/abajo**/
+}
+
+.header__texto {
+  text-align: center;
+  color: var(--blanco);
+  margin-top: 5rem;
+}
+@media (max-width: 768px) {
+  .header {
+    height: 74rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .desaparece {
+    display: none !important;
+  }
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__texto {
+    margin-top: 15rem;
+  }
+}
+.barra {
+  padding-top: 1rem;
+}
+
+.logo {
+  color: var(--blanco);
+}
+.logo__nombre {
+  font-weight: 400;
+}
+.logo__bold {
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    display: flex;
+  }
+}
+.navegacion__enlace {
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--blanco);
+  padding-top: 1rem;
+  margin-right: 2rem;
+}
+.navegacion__enlace:last-of-type {
+  margin-right: 2rem;
+}
+@media (min-width: 768px) {
+  .contenido-principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+  }
+}
+
+.entrada__texto {
+  padding: 3rem;
+  margin-bottom: 13rem;
+}
+
+.entrada {
+  margin-bottom: 2rem;
+}
+.entrada:last-of-type {
+  /*seleccionamos el ultimo de entrada*/
+  border: none;
+  margin-bottom: 0;
+}
+
+/*Mapa*/
+@media (max-width: 768px) {
+  iframe {
+    width: 100%;
+    height: 500px;
+  }
+  .map {
+    position: rel;
+  }
+}
+/***BOTON***/
+.boton {
+  display: block; /*ponemos asi para que en un mobil ocupe todo el ancho*/
+  font-family: var(--fuenteHeading);
+  color: var(--blanco);
+  padding: 1rem 3rem; /*arriba-abajo izq-der*/
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  border: none;
+  border-radius: 2rem;
+}
+@media (min-width: 768px) {
+  .boton {
+    display: inline-block; /*coje el espacio que le hemos dado a boton con el pading y margin*/
+  }
+}
+.boton--primario {
+  background-color: var(--negro);
+}
+.boton:hover {
+  cursor: pointer;
+}
+.boton--secundario {
+  background-color: var(--primario);
+}
+.cursos {
+  list-style: none;
+}
+.widget-curso {
+  border-bottom: 1px solid var(--claro);
+  margin-top: 2rem;
+}
+.widget-curso:last-of-type {
+  border: none;
+  margin-bottom: 0;
+}
+.curso__label,
+.widget-curso__label {
+  font-family: var(--fuenteHeading);
+  font-weight: bold;
+}
+.widget-curso__info {
+  font-weight: normal;
+}
+.widget-curso__info,
+.widget-curso__label {
+  font-size: 2rem;
+}
+
+/* ASIDE */
+@media (max-width: 768px) {
+  .sidebar {
+    margin-bottom: 17rem;
+  }
+}
+
+/***FOOTER***/
+
+.footer {
+  background-color: var(--negro);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.contenedor__footer {
+  padding-bottom: 2rem;
+}
+.iconos_footer ul {
+  display: flex;
+  list-style: none;
+}
+.iconos_footer ul li {
+  margin-left: 4rem;
+}
+@media (max-width: 768px) {
+  .barra ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+  }
+  .barra ul li {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/***SOBRE NOSOTROS***/
+
+@media (min-width: 768px) {
+  .sobre-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .sobre-nosotros__texto {
+    margin-left: 2rem;
+  }
+  .contenedor_nosotros {
+    margin-bottom: 15rem;
+  }
+}
+.sobre-nosotros__imagen {
+  margin-bottom: 2rem;
+}
+
+/***CURSO***/
+.t_cursos {
+  border-bottom: solid;
+  text-align: center;
+}
+.curso {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--claro);
+}
+@media (min-width: 768px) {
+  .curso {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .curso__informacion {
+    margin-left: 2rem;
+  }
+}
+.curso:last-of-type {
+  border: none;
+}
+
+/***ENTRADA***/
+
+.entrada__imagen {
+  margin-top: 2rem;
+}
+
+/***CONTACTO***/
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: var(--blanco);
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input[type="submit"]:hover {
+  background-color: #aaa;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: var(--claro);
+  padding: 20px;
+  margin-bottom: 3rem;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 768px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .container {
+    margin-bottom: 20rem;
+  }
+}
+
+/***SPINNING***/
+
+.spinning {
+  text-align: center;
+}
+
+/***GALERIA***/
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galeria a {
+  flex-basis: 45%;
+  padding: 2em;
+  flex-grow: 1;
+
+  border: 0;
+
+  transition: all 0.5s;
+}
+
+.galeria a:hover {
+  opacity: 0.7;
+}
+
+.galeria a img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1em solid var(--blanco);
+  box-shadow: 2px 2px 10px #aaa;
+  border-radius: 1em;
+}
+
+.PopUp {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(1, 1, 1, 0.8);
+  display: block;
+  top: 0;
+  left: 0;
+  padding-top: 4rem;
+}
+
+.PopUpImg {
+  width: 70%;
+  max-width: 1000px;
+  display: block;
+  position: relative;
+  margin: 0.5em auto;
+  border: 0.5em solid var(--blanco);
+}
+
+.PopUpImg img {
+  width: 100%;
+  display: block;
+  height: auto;
+  position: relative;
+}
+
+.close {
+  width: 50px;
+  height: 50px;
+  background: var(--blanco);
+  color: var(--negro);
+  position: absolute;
+  top: 0;
+  right: -60px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  border: solid var(--negro);
+  font-size: larger;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .galeria {
+    display: grid;
+  }
+  .PopUpImg {
+    width: 100%;
+  }
+  .close {
+    top: 240px;
+    left: 0px;
+  }
+}
