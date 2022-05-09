@@ -22,8 +22,9 @@ html {
 }
 u{
   text-decoration: none;
-  border-bottom: 5px solid white;
-  border-radius: 0.8rem;
+  border-bottom: 6px solid var(--primario);
+  border-radius: 0.6rem;
+  width: 10rem;
 } 
 a{
   color: var(--blanco);
