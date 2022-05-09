@@ -32,3 +32,4 @@ $(".close").click(function () {
 
   $('[data-toggle="tooltip"]').tooltip();
 })(jQuery);
+

@@ -47,7 +47,7 @@
           <nav class="navegacion">
             <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
             <a href="cursos.html" class="navegacion__enlace">+ Cursos</a>
-            <a href="contacto.php" class="navegacion__enlace">Contacto</a>
+            <a href="contacto.html" class="navegacion__enlace">Contacto</a>
           </nav>
         </div>
       </div>
@@ -58,78 +58,79 @@
         </h2>
         <p>Te damos impulso; tú decides hasta dónde llegar</p>
         <div class=" desaparece">
-          <p class="no-margin"><h3>SCROLL<h3><img src="img/arrow.png"  alt=""></p>  
+          <p class="no-margin"><a href="#seccion_1"><h3>SCROLL</h3></a><img src="img/arrow.png"  alt=""></p>  
         </div>
       </div>
     </header>
+    <section id="seccion_1">
+      <div class="contenedor contenido-principal">
+        <main class="blog">
+          <br /><br />
+          <article class="entrada">
+            <div class="entrada__imagen">
+              <picture>
+                <source
+                  loading="lazy"
+                  srcset="img/logaso.webp"
+                  type="image/webp"
+                />
+                <img loading="lazy" src="img/logaso.png" alt="LogoEmpresa" />
+              </picture>
+            </div>
+  
+            <div class="entrada__contenido">
+              <h4 class="no-margin">Nosotros</h4>
+              <p>Mas de 20 años en el sector. Sabemos lo que buscas</p>
+              <a href="nosotros.html" class="boton boton--primario"
+                >Leer Entrada</a
+              >
+            </div>
+          </article>
 
-    <div class="contenedor contenido-principal">
-      <main class="blog">
-        <br /><br />
-        <article class="entrada">
-          <div class="entrada__imagen">
-            <picture>
-              <source
-                loading="lazy"
-                srcset="img/logaso.webp"
-                type="image/webp"
-              />
-              <img loading="lazy" src="img/logaso.png" alt="LogoEmpresa" />
-            </picture>
-          </div>
-
-          <div class="entrada__contenido">
-            <h4 class="no-margin">Nosotros</h4>
-            <p>Mas de 20 años en el sector. Sabemos lo que buscas</p>
-            <a href="nosotros.html" class="boton boton--primario"
-              >Leer Entrada</a
-            >
-          </div>
-        </article>
-        <hr />
-        <article class="entrada">
-          <div class="entrada__imagen">
-            <picture>
-              <source
+          <hr />
+          <article class="entrada">
+            <div class="entrada__imagen">
+              <picture>
+                <source
                 loading="lazy"
                 srcset="img/Rafting.webp"
                 type="image/webp"
-              />
-              <img loading="lazy" src="img/Rafting.jpg" alt="Rafting" />
-            </picture>
-          </div>
-
-          <div class="entrada__contenido">
-            <h4 class="no-margin">Galeria de Aventuras</h4>
-            <p>
-              Además de todas las clases que impartimos en World Fitness Center,
-              tenemos un montón de actividades fuera de nuestro horario.<br />
-
-              Nos encanta que nuestros clientes se sientan arropados y sobre
-              todo que se diviertan de una manera sana.
-            </p>
-            <a href="galeria.html" class="boton boton--primario"
+                />
+                <img loading="lazy" src="img/Rafting.jpg" alt="Rafting" />
+              </picture>
+            </div>
+            
+            <div class="entrada__contenido">
+              <h4 class="no-margin">Galeria de Aventuras</h4>
+              <p>
+                Además de todas las clases que impartimos en World Fitness Center,
+                tenemos un montón de actividades fuera de nuestro horario.<br />
+                
+                Nos encanta que nuestros clientes se sientan arropados y sobre
+                todo que se diviertan de una manera sana.
+              </p>
+              <a href="galeria.html" class="boton boton--primario"
               >Leer Entrada</a
-            >
+              >
           </div>
         </article>
         <article class="map">
           <h4 class="no-margin">Localización</h4>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12676.11201263684!2d-6.071057!3d37.412813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2334a2612023e139!2sWorld%20Fitness%20Center!5e0!3m2!1sen!2ses!4v1651588999176!5m2!1sen!2ses"
-            width="800"
-            height="600"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12676.11201263684!2d-6.071057!3d37.412813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2334a2612023e139!2sWorld%20Fitness%20Center!5e0!3m2!1sen!2ses!4v1651588999176!5m2!1sen!2ses"
+          width="800"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </article>
       </main>
 
       <aside class="sidebar">
         <h3 class="t_cursos">Nuestros Cursos</h3>
-
+        
         <ul class="cursos no-padding">
           <li class="widget-curso">
             <h4 class="no-margin">Spinning</h4>
@@ -144,7 +145,7 @@
               Cupo: <span class="widget-curso__info">20</span>
             </p>
             <a href="spinning.html" class="boton boton--secundario"
-              >Más Informacion</a
+            >Más Informacion</a
             >
           </li>
         </ul>
@@ -156,14 +157,14 @@
             <p class="widget-curso__label">
               Precio:
               <span class="widget-curso__info"
-                >Incluido con abono el mensual</span
+              >Incluido con abono el mensual</span
               >
             </p>
             <p class="widget-curso__label">
               Cupo: <span class="widget-curso__info">20</span>
             </p>
             <a href="pilates.html" class="boton boton--secundario"
-              >Más Informacion</a
+            >Más Informacion</a
             >
           </li>
         </ul>
@@ -175,14 +176,14 @@
             <p class="widget-curso__label">
               Precio:
               <span class="widget-curso__info"
-                >Incluido con abono el mensual</span
+              >Incluido con abono el mensual</span
               >
             </p>
             <p class="widget-curso__label">
               Cupo: <span class="widget-curso__info">20</span>
             </p>
             <a href="just-pump.html" class="boton boton--secundario"
-              >Más Informacion</a
+            >Más Informacion</a
             >
           </li>
         </ul>
@@ -194,20 +195,21 @@
             <p class="widget-curso__label">
               Precio:
               <span class="widget-curso__info"
-                >Incluido con abono el mensual</span
+              >Incluido con abono el mensual</span
               >
             </p>
             <p class="widget-curso__label">
               Cupo: <span class="widget-curso__info">20</span>
             </p>
             <a href="mma.html" class="boton boton--secundario"
-              >Más Informacion</a
+            >Más Informacion</a
             >
           </li>
         </ul>
       </aside>
     </div>
-
+  </section>
+    
     <footer class="footer">
       <div class="contenedor contenedor__footer">
         <!--Contiene todo el bloque de la navegacion-->
@@ -225,7 +227,7 @@
           <ul>
             <li>
               <a class="logo_img" href="https://www.facebook.com/wfitnesscenter"
-                ><img src="logos/facebook.png" alt=""
+              ><img src="logos/facebook.png" alt=""
               /></a>
             </li>
             <li>

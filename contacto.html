@@ -57,79 +57,81 @@
         </h2>
         <p class="no-margin">Te damos impulso; tú decides hasta dónde llegar</p>
         <div class=" desaparece">
-          <p class="no-margin"><h3>SCROLL<h3><img src="img/arrow.png"  alt=""></p>  
+          <p class="no-margin"><a href="#seccion_1"><h3>SCROLL</h3></a><img src="img/arrow.png"  alt=""></p>  
         </div>
       </div>
     </header>
+<section id="seccion_1">
 
-    <main class="contenedor">
-      <h3 class="centrar-texto">Contacto</h3>
+  <main class="contenedor">
+    <h3 class="centrar-texto">Contacto</h3>
 
-      <div class="container">
-        <form action="mensaje.php" name="enviar" method="post">
-          <div class="row">
-            <div class="col-25">
-              <label for="fname">Nombre</label>
-            </div>
-            <div class="col-75">
-              <input
-                type="text"
-                id="fname"
-                name="name"
-                placeholder="Nombre.."
-                required
-              />
-            </div>
+    <div class="container">
+      <form action="mensaje.php" name="enviar" method="post">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Nombre</label>
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="lname">Apellidos</label>
-            </div>
-            <div class="col-75">
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Apellidos.."
-                required
-              />
-            </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fname"
+              name="name"
+              placeholder="Nombre.."
+              required
+            />
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="email">Email</label>
-            </div>
-            <div class="col-75">
-              <input
-                type="email"
-                id="city"
-                name="email"
-                placeholder="Correo electronico.."
-                required
-              />
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Apellidos</label>
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="subject">Mensaje</label>
-            </div>
-            <div class="col-75">
-              <textarea
-                id="subject"
-                name="subject"
-                placeholder="Que desea que te contemos.."
-                style="height: 200px"
-                required
-              ></textarea>
-            </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Apellidos.."
+              required
+            />
           </div>
-          <div class="row">
-            <input class="botonFormulario" type="submit" value="Enviar" />
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label>
           </div>
-        </form>
-      </div>
-     
-    </main>
+          <div class="col-75">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Correo electronico.."
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Mensaje</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Que desea que te contemos.."
+              style="height: 200px"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input class="botonFormulario" type="submit" value="Enviar" />
+        </div>
+      </form>
+    </div>
+   
+  </main>
+</section>
 
     <footer class="footer">
       <div class="contenedor contenedor__footer">

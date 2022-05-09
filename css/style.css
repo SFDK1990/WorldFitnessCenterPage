@@ -8,14 +8,25 @@
   --negro: #000000;
 }
 
+
+
 html {
   box-sizing: border-box; /*ESTO HACE QUE EL PADING NO AFECTE EL ANCHO DE NUESTROS ELEMENTOS*/
   font-size: 62.5%; /*1rem = 10px*/
+  scroll-behavior: smooth;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit; /*lo que hace es heredar del elemento padre de html pero si lo utilizas de otro selector lo hereda de ese = lo  hace mas dinamico*/
+}
+u{
+  text-decoration: none;
+  border-bottom: 5px solid white;
+  border-radius: 0.8rem;
+} 
+a{
+  color: var(--blanco);
 }
 header {
   padding-bottom: 1rem;
@@ -317,7 +328,7 @@ img {
 }
 
 /***CONTACTO***/
-input[type="text"],
+input[type="text"],input[type="email"],
 select,
 textarea {
   width: 100%;
@@ -327,7 +338,6 @@ textarea {
   box-sizing: border-box;
   resize: vertical;
 }
-
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
